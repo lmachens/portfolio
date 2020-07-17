@@ -1,8 +1,37 @@
 // Your variable overrides
-$body-bg: #000;
-$body-color: white;
-$primary: hotpink;
-$font-family-base: Arial;
+$body-bg: #252734;
+$body-color: #e6e6e9;
+$primary: #ffc25c;
+$secondary: #676976;
+$font-family-base: "Space Mono", monospace;
+
+$jumbotron-bg: #333646;
+$h2-font-size: 0.8rem;
+
+h1 {
+  position: relative;
+}
+
+h1:after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: $primary;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.jumbotron {
+  background-image: url(../assets/me.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: 90%;
+
+  @media (min-width: 576px) {
+    background-position-x: 30%;
+  }
+}
 
 // Include all Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
